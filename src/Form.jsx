@@ -1,9 +1,11 @@
 import { useState } from "react";
 
-export default function Form() {
+export default function Form({ onAddArticle }) {
   const [newTitle, setNewTitle] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    onAddArticle({ title: newTitle });
+    setNewTitle("");
   };
 
   return (

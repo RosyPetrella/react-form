@@ -1,6 +1,6 @@
-import articles from "./Articles";
+// import articles from "./Articles";
 
-export default function List() {
+export default function List({ articles }) {
   return (
     <div className="card">
       <div className="card-body">
